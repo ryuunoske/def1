@@ -65,6 +65,7 @@ gem 'haml'
 gem 'font-awesome-sass'
 gem 'erb2haml', :group => :development
 gem 'geocoder'
+gem 'gmaps4rails'
 gem 'gon'
 #gem 'gmaps4rails' #Gem has Some bugs with not supporting the way google api reference works
 #End Ankit Gems

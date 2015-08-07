@@ -110,6 +110,7 @@ GEM
     geocoder (1.2.8)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    gmaps4rails (2.1.2)
     gon (6.0.1)
       actionpack (>= 3.0)
       json
@@ -312,6 +313,7 @@ DEPENDENCIES
   faker
   font-awesome-sass
   geocoder
+  gmaps4rails
   gon
   haml
   haml-rails
