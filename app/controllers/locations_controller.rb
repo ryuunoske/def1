@@ -5,6 +5,13 @@ class LocationsController < ApplicationController
 	# GET /locations.json
 	def index
 		@locations = Location.all
+		@hash = Gmaps4rails.build_markers(@locations) do |location, marker|
+			marker.lat location.latitude
+		end
+		if Location.exists?
+			gon.stop = Location.first.pluck(:latitude, :longitude)
+			go.start = Location.second.pluck(:latitude, :longitude)
+		end
 	end
 
 	# GET /locations/1
